@@ -1,5 +1,3 @@
-import datetime
-import time
 
 ## "{;10}" establece un ancho de campo mínimo de 10 RECURSO ADICIONAL PARA MOSTRAR DE FORMA ORDENADA
 # https://docs.python.org/es/3.11/library/string.html#format-specification-mini-language
@@ -216,8 +214,8 @@ def cierreCaja(ventas):
             suma+=v[5]
             print(f"{metodo:<15}{v[1]:<5}{v[2]:<15}{v[3]:<10.2f}{v[4]:<10}{v[5]:<10.2f}")
         print('------------------------------------------------\n')
-        print(f"{'VENTAS DE CONTADO: $'} {sumacontado:.2f}' | VENTAS CON OTRO METODO DE PAGO: $', {sumaotrometodo:.2f},'\n")
-        print(f"Cierre de caja: $', {suma:.2f},'\n") 
+        print(f"{'VENTAS DE CONTADO: $'} {sumacontado:.2f} | VENTAS CON OTRO METODO DE PAGO: $ {sumaotrometodo:.2f}\n")
+        print(f"Cierre de caja: $ {suma:.2f}\n") 
 
 
 def main():
@@ -232,7 +230,7 @@ def main():
 
     #VENTAS { METODO DE PAGO | ID | NOMBRE | CANTIDADVENDIDA | PRECIO | TOTAL }
     ventas=[]
-    print("Bienvenido al sistema. https://github.com/mauriander/PythonTp/blob/main/DiccionarioDatos.txt")
+    print("Bienvenido al sistema. https://github.com/mauriander/PythonTp/blob/main/Manual%20de%20Usuario%20para%20el%20Sistema%20de%20Gesti%C3%B3n%20de%20Productos.pdf")
     
     cargarStock(productos)
     while True:
