@@ -14,7 +14,6 @@ def cargarOpciones():
         print('5 - Pedido a proveerdores (Stock menor o igual a 3)')
         print('6 - Cierre de caja')
         print('0 - Salir')
-        print('https://docs.python.org/es/3.11/library/string.html#format-specification-mini-language')
         print('\n')
 ###------------VALIDACIONES-------------###
 def validarOpciones(opcion):
@@ -233,7 +232,8 @@ def main():
 
     #VENTAS { METODO DE PAGO | ID | NOMBRE | CANTIDADVENDIDA | PRECIO | TOTAL }
     ventas=[]
-    print("Bienvenido al sistema.")
+    print("Bienvenido al sistema. https://github.com/mauriander/PythonTp/blob/main/DiccionarioDatos.txt")
+    
     cargarStock(productos)
     while True:
         cargarOpciones()
