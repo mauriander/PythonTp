@@ -9,7 +9,6 @@ Bienvenido al repositorio del **Trabajo Integrador Python**. Este proyecto es un
 - [Funciones](#funciones)
 - [Diccionario de Datos](#diccionario-de-datos)
 - [Contribuciones](#contribuciones)
-- [Licencia](#licencia)
 
 ## Instalación
 Para ejecutar este proyecto, necesitas tener Python 3.x instalado en tu sistema. Sigue estos pasos para instalar y ejecutar el proyecto:
