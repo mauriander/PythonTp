@@ -34,6 +34,7 @@ Al ejecutar el script, se mostrará un menú con las siguientes opciones:
 4. Lista de producto
 5. Pedido a proveedores (Stock menor o igual a 3)
 6. Cierre de caja
+
 0. Salir
 
 Selecciona la opción deseada ingresando el número correspondiente.
