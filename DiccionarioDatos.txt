@@ -1,0 +1,72 @@
+datos =  
+     productos :  
+         descripcion :  Lista de productos en el inventario.  
+         estructura : [
+              id :  ID del producto  un número entero positivo.   
+              nombre :  Nombre del producto  una cadena de texto.   
+              precio :  Precio del producto  un número decimal positivo.   
+              stock :  Cantidad en stock del producto  un número entero positivo.  
+        ] 
+        
+      
+     ventas :  
+         descripcion :  Lista de ventas realizadas.  
+         estructura : [
+              metodo_pago :  Método de pago  1 para contado y 2 para otro método.   
+              id :  ID del producto vendido  un número entero positivo.   
+              nombre :  Nombre del producto vendido  una cadena de texto.   
+              precio :  Precio del producto vendido  un número decimal positivo.   
+              cantidad :  Cantidad vendida del producto  un número entero positivo.   
+              total :  Total de la venta  un número decimal positivo.  
+        ] 
+       
+      
+     opcion :  
+         descripcion :  Opción seleccionada en el menú.  
+         valores :  Un número entero entre 0 y 6. 
+      
+     idn :  
+         descripcion :  ID del nuevo producto a agregar.  
+         valores :  Un número entero positivo. 
+      
+     nomn :  
+         descripcion :  Nombre del nuevo producto a agregar.  
+         valores :  Una cadena de texto. 
+      
+     pren :  
+         descripcion :  Precio del nuevo producto a agregar.  
+         valores :  Un número decimal positivo. 
+      
+     stockn :  
+         descripcion :  Cantidad en stock del nuevo producto a agregar.  
+         valores :  Un número entero positivo. 
+      
+     idv :  
+         descripcion :  ID del producto a vender.  
+         valores :  Un número entero positivo. 
+      
+     cant :  
+         descripcion :  Cantidad del producto a vender.  
+         valores :  Un número entero positivo menor o igual al stock disponible. 
+      
+     metp :  
+         descripcion :  Método de pago seleccionado para la venta.  
+         valores :  1 para contado  2 para otro método. 
+      
+     idc :  
+         descripcion :  ID del producto a consultar.  
+         valores :  Un número entero positivo. 
+      
+     suma :  
+         descripcion :  Suma total de las ventas.  
+         valores :  Un número decimal positivo. 
+      
+     sumacontado :  
+         descripcion :  Suma total de las ventas realizadas al contado.  
+         valores :  Un número decimal positivo. 
+      
+     sumaotrometodo :  
+         descripcion :  Suma total de las ventas realizadas con otro método de pago.  
+         valores :  Un número decimal positivo. 
+     
+ 
