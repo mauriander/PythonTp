@@ -234,7 +234,8 @@ def main():
 
     #VENTAS { METODO DE PAGO | ID | NOMBRE | CANTIDADVENDIDA | PRECIO | TOTAL }
     ventas=[]
-    print("Bienvenido al sistema. https://github.com/mauriander/PythonTp/blob/main/Manual%20de%20Usuario%20para%20el%20Sistema%20de%20Gesti%C3%B3n%20de%20Productos.pdf")
+    print("Bienvenido al sistema.")
+    print("Manual de usuario: ","https://github.com/mauriander/PythonTp/blob/main/Manual%20de%20Usuario%20para%20el%20Sistema%20de%20Gesti%C3%B3n%20de%20Productos.pdf")
     
     cargarStock(productos)
     while True:
