@@ -1,7 +1,9 @@
 
 ## "{;10}" establece un ancho de campo mínimo de 10 RECURSO ADICIONAL PARA MOSTRAR DE FORMA ORDENADA
+##.2f reduce a dos decimales
+## < o > Alinean el texto hacia izquierda o derecha.
+## Print(f".........") es un print del contenido formateado , por eso F, me permite agregar variables
 # https://docs.python.org/es/3.11/library/string.html#format-specification-mini-language
-
 
 def cargarOpciones():
         print('\n')
@@ -53,8 +55,8 @@ def validarPrecio(p):
 def validarID(id, productos):
     while not existeID(id, productos):
         print("El ID no es correcto o no existe en la lista de productos.")
-        id = int(input('Ingrese nuevamente un ID: '))
-    return id  
+        id =esNumero(input('Ingrese nuevamente un ID: '))
+    return int(id)
     
 def validarMetodoPago(metodo):
     while (metodo< 1 or metodo>2 ):
@@ -102,8 +104,8 @@ def cargarStock(productos):
 ### --------- AGREGAR NUEVO
 def agregarProducto(productos):
     print('Escogió opción 1 - AGREGAR PRODUCTO')
-    idn = esNumero(input('Ingrese número ID: '))
-    idn=validarNuevoProducto(idn,productos)
+    #idn = esNumero(input('Ingrese número ID: '))
+    idn=len(productos)+1
     nomn = input('Ingrese el nombre/Descripción del producto: ')
     pren = float(input('Ingrese el precio: '))
     pren=validarPrecio(pren)
@@ -117,6 +119,7 @@ def ventaProducto(productos,ventas):
     print('Escogio opcion 2 - VENTA')
     continuar=True
     while(continuar):
+        print('Los ID de los productos estan comprendidos entre 1 - ',len(productos))
         idv = esNumero(input('Ingrese número ID: '))
         idv=validarID(idv,productos)
         for p in productos: 
@@ -152,8 +155,9 @@ def ventaProducto(productos,ventas):
 ### --------- CONSULTA PRODUCTO
 def consultaProducto(productos):
     print('Escogio opcion 3 - CONSULTAR PRODUCTO')
+    print('Los ID de los productos estan comprendidos entre 1 - ',len(productos))
     idc = esNumero(input('Ingrese número ID del producto que quiere consultar: '))
-    idc = validarID(idc, productos)  # Verificar y validar el ID ingresado
+    idc = validarID(idc, productos)  
     producto=None
     for p in productos: 
         if p[0] == idc:
@@ -221,12 +225,12 @@ def cierreCaja(ventas):
 def main():
     # p { ID | NOMBRE | PRECIO | STOCK }
     productos=[
-    [1,'AZUCAR', 1.45, 6],
-    [2,'YERBA', 3.45, 3],
-    [3,'HARINA', 2.5, 6],
-    [4,'MANTECA', 3.05, 2],
-    [5,'GALLETITAS', 10.45, 7],
-    [6,'HAMBURGUESAS', 2.15, 1]]
+    [1,'AZUCAR', 1.45, 0],
+    [2,'YERBA', 3.45, 0],
+    [3,'HARINA', 2.5, 0],
+    [4,'MANTECA', 3.05, 0],
+    [5,'GALLETITAS', 10.45, 0],
+    [6,'HAMBURGUESAS', 2.15, 0]]
 
     #VENTAS { METODO DE PAGO | ID | NOMBRE | CANTIDADVENDIDA | PRECIO | TOTAL }
     ventas=[]
